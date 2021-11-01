@@ -1,8 +1,8 @@
 import 'package:quiver/core.dart';
 
 class LoginData {
-  final String name;
-  final String password;
+  String name = 'ewu.jehan@gmail.com';
+  String password = '123';
 
   LoginData({
     required this.name,
