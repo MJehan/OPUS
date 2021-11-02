@@ -40,38 +40,40 @@ class LoginScreen extends StatelessWidget {
       logo: 'assets/images/ecorp.png',
       logoTag: Constants.logoTag,
       titleTag: Constants.titleTag,
-      navigateBackAfterRecovery: true,
-      loginProviders: [
-        LoginProvider(
-          icon: FontAwesomeIcons.google,
-          label: 'Google',
-          callback: () async {
-            print('start google sign in');
-            await Future.delayed(loginTime);
-            print('stop google sign in');
-            return '';
-          },
-        ),
-        LoginProvider(
-          icon: FontAwesomeIcons.linkedinIn,
-          label: 'LinkedIn',
-          callback: () async {
-            print('start linkdin sign in');
-            await Future.delayed(loginTime);
-            print('stop linkdin sign in');
-            return '';
-          },
-        ),
-        LoginProvider(
-          icon: FontAwesomeIcons.githubAlt,
-          callback: () async {
-            print('start github sign in');
-            await Future.delayed(loginTime);
-            print('stop github sign in');
-            return '';
-          },
-        ),
-      ],
+      navigateBackAfterRecovery: false,
+
+
+      // loginProviders: [
+      //   LoginProvider(
+      //     icon: FontAwesomeIcons.google,
+      //     label: 'Google',
+      //     callback: () async {
+      //       print('start google sign in');
+      //       await Future.delayed(loginTime);
+      //       print('stop google sign in');
+      //       return '';
+      //     },
+      //   ),
+      //   LoginProvider(
+      //     icon: FontAwesomeIcons.linkedinIn,
+      //     label: 'LinkedIn',
+      //     callback: () async {
+      //       print('start linkdin sign in');
+      //       await Future.delayed(loginTime);
+      //       print('stop linkdin sign in');
+      //       return '';
+      //     },
+      //   ),
+      //   LoginProvider(
+      //     icon: FontAwesomeIcons.githubAlt,
+      //     callback: () async {
+      //       print('start github sign in');
+      //       await Future.delayed(loginTime);
+      //       print('stop github sign in');
+      //       return '';
+      //     },
+      //   ),
+      // ],
       // hideProvidersTitle: false,
       // loginAfterSignUp: false,
       // hideForgotPasswordButton: true,
